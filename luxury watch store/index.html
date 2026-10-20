@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIMELESS | Luxury Watches</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+
+            <a href="#" class="logo">
+                TIME<span>LESS</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="#collection" class="gold-button">
+                Explore Watches
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+
+        <div class="container mx-auto px-6 py-20 md:py-28">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">TIMELESS ELEGANCE · EST. 1985</p>
+
+                    <h1 class="hero-title">
+                        Every Second<br>
+                        <span>Is a Statement.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover exceptional timepieces crafted for those
+                        who appreciate precision, elegance, and timeless luxury.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#collection" class="gold-button">
+                            Discover Collection ↗
+                        </a>
+
+                        <a href="#about" class="outline-button">
+                            Our Heritage
+                        </a>
+                    </div>
+
+                    <div class="stats flex gap-10 mt-12">
+                        <div>
+                            <h3>40+</h3>
+                            <p>Years of Legacy</p>
+                        </div>
+
+                        <div>
+                            <h3>120+</h3>
+                            <p>Unique Designs</p>
+                        </div>
+
+                        <div>
+                            <h3>100%</h3>
+                            <p>Quality Focus</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img
+                        src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85"
+                        alt="Elegant luxury wristwatch"
+                        class="hero-image"
+                    >
+
+                    <div class="image-label">
+                        <p>THE SIGNATURE SERIES</p>
+                        <h3>Made for Eternity.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Collection -->
+    <section id="collection" class="collection-section py-20">
+
+        <div class="container mx-auto px-6">
+
+            <div class="section-heading text-center mb-12">
+                <p class="eyebrow">CURATED EXCELLENCE</p>
+
+                <h2>
+                    The Signature <span>Collection</span>
+                </h2>
+
+                <p>
+                    Discover the art of fine watchmaking.
+                </p>
+            </div>
+
+            <!-- Category Navigation -->
+            <div class="category-list flex flex-wrap justify-center gap-3 mb-12">
+                <button class="category-btn active" data-category="all">
+                    All Watches
+                </button>
+
+                <button class="category-btn" data-category="classic">
+                    Classic
+                </button>
+
+                <button class="category-btn" data-category="sport">
+                    Sport
+                </button>
+
+                <button class="category-btn" data-category="modern">
+                    Modern
+                </button>
+            </div>
+
+
+            <!-- Product Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Watch 1 -->
+                <article class="watch-card" data-category="classic">
+
+                    <div class="product-image">
+                        <span class="product-tag">BESTSELLER</span>
+
+                        <button class="wishlist-btn" aria-label="Add watch to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80"
+                            alt="Classic luxury wristwatch"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">CLASSIC COLLECTION</p>
+                        <h3>Royal Heritage</h3>
+                        <p class="product-description">
+                            Refined design. Timeless character.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="price">$1,250</span>
+                            <button class="add-btn" data-name="Royal Heritage">
+                                Quick View ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Watch 2 -->
+                <article class="watch-card" data-category="sport">
+
+                    <div class="product-image">
+                        <span class="product-tag">NEW ARRIVAL</span>
+
+                        <button class="wishlist-btn" aria-label="Add watch to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80"
+                            alt="Sport inspired wristwatch"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">SPORT COLLECTION</p>
+                        <h3>Ocean Prestige</h3>
+                        <p class="product-description">
+                            Bold engineering meets elegance.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="price">$1,850</span>
+                            <button class="add-btn" data-name="Ocean Prestige">
+                                Quick View ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Watch 3 -->
+                <article class="watch-card" data-category="modern">
+
+                    <div class="product-image">
+                        <span class="product-tag">LIMITED EDITION</span>
+
+                        <button class="wishlist-btn" aria-label="Add watch to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+                            alt="Modern designer wristwatch"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">MODERN COLLECTION</p>
+                        <h3>Midnight Gold</h3>
+                        <p class="product-description">
+                            Contemporary style, extraordinary detail.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-5">
+                            <span class="price">$2,400</span>
+                            <button class="add-btn" data-name="Midnight Gold">
+                                Quick View ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="collection-note text-center mt-8">
+                Prices and products are demonstration content.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Brand Story -->
+    <section id="about" class="story-section py-20">
+
+        <div class="container mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="story-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1000&q=85"
+                        alt="Luxury watchmaking and craftsmanship"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="story-content">
+                    <p class="eyebrow">OUR PHILOSOPHY</p>
+
+                    <h2>
+                        Crafted with Purpose.<br>
+                        <span>Worn with Pride.</span>
+                    </h2>
+
+                    <p>
+                        At TIMELESS, we believe a watch is more than an
+                        accessory. It represents ambition, personal style,
+                        and the moments that matter most.
+                    </p>
+
+                    <p>
+                        Our collection celebrates thoughtful design,
+                        meticulous detail, and a passion for fine timepieces.
+                    </p>
+
+                    <a href="#contact" class="gold-button inline-block mt-6">
+                        Discover Our Story ↗
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefits -->
+    <section class="benefits-section py-16">
+        <div class="container mx-auto px-6">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="benefit-card">
+                    <span>✧</span>
+                    <h3>Exceptional Design</h3>
+                    <p>Thoughtful details in every timepiece.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>◇</span>
+                    <h3>Quality Focus</h3>
+                    <p>Selected with attention to craftsmanship.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>⌘</span>
+                    <h3>Personal Service</h3>
+                    <p>Support to help you find your style.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>◷</span>
+                    <h3>Timeless Style</h3>
+                    <p>Designs for everyday and special occasions.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <section id="contact" class="newsletter-section py-20">
+        <div class="container mx-auto px-6 text-center">
+
+            <p class="eyebrow">THE TIMELESS EDIT</p>
+
+            <h2>Luxury, Delivered.</h2>
+
+            <p class="newsletter-description">
+                Subscribe for collection updates, style inspiration,
+                and the latest arrivals.
+            </p>
+
+            <form id="newsletter-form"
+                  class="newsletter-form flex flex-col sm:flex-row gap-3 mx-auto mt-8">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    aria-label="Email address"
+                    required
+                >
+
+                <button type="submit" class="gold-button">
+                    Subscribe ↗
+                </button>
+
+            </form>
+
+            <p id="newsletter-message" class="mt-4" aria-live="polite"></p>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <a href="#home" class="logo">
+                TIME<span>LESS</span>
+            </a>
+
+            <p>© 2026 TIMELESS. A concept luxury watch store.</p>
+
+            <div class="flex gap-5">
+                <a href="#home">Home</a>
+                <a href="#collection">Shop</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true"
+             aria-labelledby="modal-title">
+
+            <button id="close-modal" class="close-modal"
+                    aria-label="Close dialog">×</button>
+
+            <p class="eyebrow">TIMELESS COLLECTION</p>
+            <h2 id="modal-title">Watch Name</h2>
+
+            <p>
+                Explore this design from our demonstration collection.
+                Contact our store to learn more about a timepiece.
+            </p>
+
+            <button id="modal-done" class="gold-button mt-6">
+                Continue Exploring
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Small JavaScript for interactive features -->
+    <script>
+        // Product category filters
+        const categoryButtons = document.querySelectorAll(".category-btn");
+        const watchCards = document.querySelectorAll(".watch-card");
+
+        categoryButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                categoryButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+                button.classList.add("active");
+
+                const category = button.dataset.category;
+
+                watchCards.forEach(card => {
+                    const matches =
+                        category === "all" ||
+                        card.dataset.category === category;
+
+                    card.hidden = !matches;
+                });
+            });
+        });
+
+        // Wishlist buttons
+        document.querySelectorAll(".wishlist-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                const selected = button.classList.toggle("selected");
+                button.textContent = selected ? "♥" : "♡";
+                button.setAttribute("aria-pressed", String(selected));
+            });
+        });
+
+        // Product quick-view modal
+        const modal = document.getElementById("product-modal");
+        const modalTitle = document.getElementById("modal-title");
+
+        function closeModal() {
+            modal.classList.remove("show");
+            modal.setAttribute("aria-hidden", "true");
+        }
+
+        document.querySelectorAll(".add-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                modalTitle.textContent = button.dataset.name;
+                modal.classList.add("show");
+                modal.setAttribute("aria-hidden", "false");
+                document.getElementById("close-modal").focus();
+            });
+        });
+
+        document.getElementById("close-modal")
+            .addEventListener("click", closeModal);
+
+        document.getElementById("modal-done")
+            .addEventListener("click", closeModal);
+
+        modal.addEventListener("click", event => {
+            if (event.target === modal) closeModal();
+        });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape") closeModal();
+        });
+
+        // Newsletter demo
+        document.getElementById("newsletter-form")
+            .addEventListener("submit", event => {
+                event.preventDefault();
+
+                document.getElementById("newsletter-message").textContent =
+                    "Thank you! This is a demo form; no email was sent.";
+
+                event.target.reset();
+            });
+    </script>
+
+</body>
+</html>
